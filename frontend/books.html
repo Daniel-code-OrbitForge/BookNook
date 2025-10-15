@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books - BookNook</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h2>BookNook</h2>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="books.html" class="active">Books</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="auth-links" id="authLinks">
+                    <a href="login.html" class="btn-login">Login</a>
+                    <a href="register.html" class="btn-register">Register</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Browse Our Collection</h1>
+            <p>Discover your next favorite book</p>
+        </div>
+    </section>
+
+    <section class="books-section">
+        <div class="container">
+            <div class="books-header">
+                <h2>Available Books</h2>
+                <div class="books-actions" id="booksActions"></div>
+            </div>
+            
+            <div id="loadingBooks" class="loading">Loading books...</div>
+            <div id="booksGrid" class="books-grid"></div>
+            <div id="noBooksMessage" class="no-books" style="display: none;">No books available yet.</div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 BookNook. All rights reserved. | Tech4Africans Capstone Project</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/auth.js"></script>
+    <script>
+        loadBooks();
+    </script>
+</body>
+</html>
