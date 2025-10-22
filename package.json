@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "keywords": ["e-commerce",
+  "keywords": [
+    "e-commerce",
     "bookstore",
     "books",
     "book-management",
@@ -23,10 +24,13 @@
     "multer",
     "nodemailer",
     "vanilla-js",
-    "responsive-design"],
+    "responsive-design"
+  ],
   "author": "Tech4Africans Capstone Team",
   "license": "ISC",
-  "dependencies": {"bcryptjs": "^3.0.2",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "bcryptjs": "^3.0.2",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
     "dotenv": "^17.2.3",
@@ -35,5 +39,6 @@
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.19.1",
     "multer": "^2.0.2",
-    "nodemailer": "^7.0.9"}
+    "nodemailer": "^7.0.9"
+  }
 }
