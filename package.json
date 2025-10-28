@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "keywords": ["e-commerce",
+  "keywords": [
+    "e-commerce",
     "bookstore",
     "books",
     "book-management",
@@ -23,17 +24,28 @@
     "multer",
     "nodemailer",
     "vanilla-js",
-    "responsive-design"],
+    "responsive-design"
+  ],
   "author": "Tech4Africans Capstone Team",
   "license": "ISC",
-  "dependencies": {"bcryptjs": "^3.0.2",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
     "dotenv": "^17.2.3",
     "express": "^5.1.0",
-    "express-validator": "^7.2.1",
+    "express-validator": "^7.3.0",
     "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.19.1",
+    "mongoose": "^8.19.2",
     "multer": "^2.0.2",
-    "nodemailer": "^7.0.9"}
+    "nodemailer": "^7.0.10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Daniel-code-OrbitForge/BookNook.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Daniel-code-OrbitForge/BookNook/issues"
+  },
+  "homepage": "https://github.com/Daniel-code-OrbitForge/BookNook#readme"
 }
