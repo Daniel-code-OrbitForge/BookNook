@@ -26,10 +26,31 @@ const bookSchema = new mongoose.Schema({
         required: true,
         unique: true
     },
+    trending: {
+        type: Boolean,
+        required: true,
+    },
+    coverImage: {
+        type: String,
+        required: true,
+    },
+    oldPrice: {
+        type: Number,
+        required: true,
+    },
+    newPrice: {
+        type: Number,
+        required: true,
+    },
     summary: {
         type: String,
         required: false
-    }
+    },
+    createdAt: {
+        type: Date,
+        default: Date.now,
+    },
+    timestamps: true,
 });
 
 const Book = mongoose.model('Book', bookSchema);

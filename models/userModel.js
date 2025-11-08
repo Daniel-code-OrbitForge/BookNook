@@ -5,12 +5,12 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true,
         unique: true,
-        role: { 
-            type: String, 
-            default: "user" 
-        },
+    },
+    role: {
+        type: String,
+        default: "user",
         enum: ['admin', 'user', 'guest'],
-        trim: true
+        trim: true,
     },
     email: {
         type: String,
