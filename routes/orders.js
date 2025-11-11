@@ -1,0 +1,3 @@
+const { sendOrderConfirmation } = require('../utils/sendEmail');
+// After saving order to DB...
+await sendOrderConfirmation(user.email, { id: orderId, items: cartItems, total: totalPrice });
